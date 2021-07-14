@@ -18,7 +18,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 - Sam Fair: I am a fourth-year Mechanical Engineering Undergrad gathering insight into data analytics and general computer proficiency.
 - Nick Sewell: I am a fourth-year Mechanical Engineering student with a keen interest in computer science and data analysis.
-- Justin Farrell: It's a me, Justin-o!
+- Justin Farrell: I'm a fourth year Electrical Engineering student. It's true that EE is better than ME.
 
 ## References
 
