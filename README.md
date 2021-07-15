@@ -1,4 +1,4 @@
-# Group 07 - Credit Scores over the pond
+# Group 07 - Credit defaults over the pond
 
 ## Milestones
 
