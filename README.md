@@ -18,7 +18,7 @@ This data and the predictions allow lending companies to better predict the prob
 
 - Sam Fair: I am a fourth-year Mechanical Engineering Undergrad gathering insight into data analytics and general computer proficiency.
 - Nick Sewell: I am a fourth-year Mechanical Engineering student with a keen interest in computer science and data analysis.
-- Justin Farrell: I'm a fourth year Electrical Engineering student. It's true that EE is better than ME.
+- Justin Farrell: I'm a fourth-year Electrical Engineering student. My research and background consists of large amounts of data collection, I am taking this course to learn how to work with the data. It's true what they say, EE is better than ME.
 
 ## References
 
