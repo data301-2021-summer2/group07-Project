@@ -46,6 +46,7 @@ def LoadnClean (path):
                .replace({'Marital Status': {1: "Married", 2: 'Single', 3: 'Other', 0:"Delete"}})
                .loc[lambda row : ~row['Education'].str.contains('Delete')]
                .loc[lambda row : ~row['Marital Status'].str.contains('Delete')]
+               .loc[lambda x: ~x['Credit Limit'] < 0]
           )
     df2
     df3 = ( df2
