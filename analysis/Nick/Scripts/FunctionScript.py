@@ -3,11 +3,10 @@
 
 # In[ ]:
 
-
 def LoadnClean (path):
     import pandas as pd
     import seaborn as sns
-    import matplotlib as plt
+    import matplotlib.pyplot as plt
     import numpy as np
     
     df1 = ( 
@@ -66,3 +65,15 @@ def LoadnClean (path):
     
     return df3
 
+def AgevsDefault (df):
+    import pandas as pd
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+    import numpy as np
+    plot = sns.countplot(x="Age", hue="Default", data=df)
+    plt.ylabel('Count of Defaults',fontsize=18)
+    plt.xlabel('Age by years',fontsize=15)
+    plt.title("What age's are most likely to default?",fontsize=30)
+    sns.despine()
+    return plot
+        
