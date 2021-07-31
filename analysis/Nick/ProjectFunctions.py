@@ -2,8 +2,8 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 28,
-   "id": "4b951051",
+   "execution_count": None,
+   "id": "5689a27a",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -64,29 +64,29 @@
     "          )\n",
     "    df3\n",
     "    \n",
-    "    return df3"
+    "    return df3\n"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "25e30c97",
+   "execution_count": None,
+   "id": "bfed434e",
    "metadata": {},
    "outputs": [],
    "source": []
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "5e5ddffb",
+   "execution_count": None,
+   "id": "91150b7e",
    "metadata": {},
    "outputs": [],
    "source": []
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "acecdf25",
+   "execution_count": None,
+   "id": "e1465b92",
    "metadata": {},
    "outputs": [],
    "source": []
