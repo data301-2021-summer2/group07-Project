@@ -48,20 +48,16 @@ def LoadnClean (path):
                .loc[lambda row : ~row['Marital Status'].str.contains('Delete')]
                .loc[lambda x: ~x['Credit Limit'] < 0]
           )
-    df2
     df3 = ( df2
-                .assign(Payment_Score=(df2["PayStat/Sept05"]+df2['PayStat/Aug05']+df2['PayStat/Jul05']+df2['PayStat/Jun05']+df2['PayStat/May05']+df2['PayStat/Apr05']+6)/6)
-                .assign(Avg_Outstanding=(df2["Outstanding/Sept05"]+df2['Outstanding/Aug05']+df2['Outstanding/Jul05']+df2['Outstanding/Jun05']+df2['Outstanding/May05']+df2['Outstanding/Apr05'])/6)
-                .assign(Avg_Paid=(df2["Paid/Sept05"]+df2['Paid/Aug05']+df2['Paid/Jul05']+df2['Paid/Jun05']+df2['Paid/May05']+df2['Paid/Apr05'])/6)
-                .drop(["PayStat/Jun05","PayStat/Sept05","PayStat/Aug05","PayStat/Jul05","PayStat/May05","PayStat/Apr05"], axis=1)
-                .drop(["Outstanding/Sept05","Outstanding/Aug05","Outstanding/Apr05","Outstanding/Jul05","Outstanding/Jun05","Outstanding/May05"], axis=1)
-                .drop(["Paid/Sept05","Paid/Aug05","Paid/Apr05","Paid/Jul05","Paid/Jun05","Paid/May05"], axis=1)
-                .reindex(columns=["Credit Limit", "Sex", "Education","Marital Status","Age","Payment_Score","Avg_Outstanding","Avg_Paid","Default"])
+                .assign(Payment_Score = (df2["PayStat/Sept05"] + df2['PayStat/Aug05'] + df2['PayStat/Jul05'] + df2['PayStat/Jun05'] + df2['PayStat/May05'] + df2['PayStat/Apr05']+6)/6)
+                .assign(Avg_Outstanding(df2["Outstanding/Sept05"] + df2['Outstanding/Aug05'] + df2['Outstanding/Jul05'] + df2['Outstanding/Jun05'] 
+                                        + df2['Outstanding/May05'] + df2['Outstanding/Apr05'])/6)
+                .assign(Avg_Paid = (df2["Paid/Sept05"] + df2['Paid/Aug05'] + df2['Paid/Jul05'] + df2['Paid/Jun05'] + df2['Paid/May05'] + df2['Paid/Apr05'])/6)
+                .drop(["PayStat/Jun05", "PayStat/Sept05", "PayStat/Aug05", "PayStat/Jul05", "PayStat/May05", "PayStat/Apr05"], axis=1)
+                .drop(["Outstanding/Sept05", "Outstanding/Aug05", "Outstanding/Apr05", "Outstanding/Jul05", "Outstanding/Jun05", "Outstanding/May05"], axis=1)
+                .drop(["Paid/Sept05", "Paid/Aug05", "Paid/Apr05", "Paid/Jul05", "Paid/Jun05", "Paid/May05"], axis=1)
+                .reindex(columns=["Credit Limit", "Sex", "Education", "Marital Status", "Age", "Payment_Score", "Avg_Outstanding", "Avg_Paid", "Default"])
+         )
 
-           
-                
-          )
-    df3
-    
     return df3
 
