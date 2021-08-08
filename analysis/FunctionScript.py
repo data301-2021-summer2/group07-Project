@@ -70,13 +70,14 @@ def AgevsDefault (df):
     import seaborn as sns
     import matplotlib.pyplot as plt
     import numpy as np
-    plt.subplots(figsize=(30, 10))
-    plot = sns.countplot(x="Age", hue="Default", data=df)
-    plt.ylabel('Count of Defaults',fontsize=18)
-    plt.xlabel('Age by years',fontsize=15)
-    plt.title("What age's are most likely to default?",fontsize=30)
-    sns.despine()
-    return plot
+    x,y = 'Age', 'Default'
+    (df
+        .groupby(x)[y]
+        .value_counts(normalize=True)
+        .mul(100)
+        .rename('percent')
+        .reset_index()
+        .pipe((sns.catplot,'data'), x=x,y='percent',height=5,aspect=3,hue=y,kind='bar'))
         
 def JustPayments(path):
       import pandas as pd
