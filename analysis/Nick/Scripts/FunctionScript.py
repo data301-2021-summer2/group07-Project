@@ -9,8 +9,13 @@ def LoadnClean (path):
     import matplotlib.pyplot as plt
     import numpy as np
     
-    df1 = ( 
+    df = ( 
                 pd.read_csv(path,index_col = 0)
+          )
+    df1 = ( df
+                .replace("",float("NaN"))
+                .dropna()
+                .reset_index(drop=True)   
           )
     df2 = ( df1
                 .drop(index=df1.index[0])
