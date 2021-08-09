@@ -1,4 +1,4 @@
-# Analyis Main Folder
+# Analysis Main Folder
 
 This folder contains the subdirectories for each groups individual contributions
 
